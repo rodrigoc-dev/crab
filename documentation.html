@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Documentação - Crab</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="icon" href="assets/icons/crab-icon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navegação Principal -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="assets/images/crab.png" alt="Crab Logo" style="width: 100px; height: auto;" />
+                <a href="index.html" class="logo-text">Crab</a>
+            </div>
+            <ul>
+                <li><a href="about.html">Sobre</a></li>
+                <li><a href="downloads.html">Downloads</a></li>
+                <li><a href="documentation.html">Documentação</a></li>
+                <li><a href="community.html">Comunidade</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção Documentação -->
+    <section id="documentacao" class="section">
+        <div class="container">
+            <h2>Documentação do Crab</h2>
+            <p>Bem-vindo à documentação oficial da linguagem de programação Crab. Aqui, você encontrará informações detalhadas para começar, além de tópicos avançados para aprofundar seu conhecimento sobre o Crab. Seja você um iniciante ou um desenvolvedor experiente, há recursos valiosos aqui para todos.</p>
+            <h3>Índice</h3>
+            <ul>
+                <li><a href="#introducao">Introdução</a></li>
+                <li><a href="#instalacao">Instalação</a></li>
+                <li><a href="#sintaxe">Sintaxe</a></li>
+                <li><a href="#tipos-de-dados">Tipos de Dados</a></li>
+                <li><a href="#estruturas-de-controle">Estruturas de Controle</a></li>
+                <li><a href="#funcoes">Funções</a></li>
+                <li><a href="#concorrencia">Concorrência</a></li>
+                <li><a href="#topicos-avancados">Tópicos Avançados</a></li>
+                <li><a href="#faq">Perguntas Frequentes (FAQ)</a></li>
+            </ul>
+            <h3 id="introducao">Introdução</h3>
+            <p>Crab é uma linguagem de programação moderna, criada com o objetivo de ser intuitiva, poderosa e eficiente. Seu design foi inspirado no caranguejo, que é ágil, resistente e adaptável — características que queremos transmitir na linguagem. Crab foi projetada para oferecer simplicidade sem comprometer o desempenho, sendo adequada para tudo, desde scripts pequenos até sistemas complexos de alto desempenho.</p>
+            <p>Se você já possui experiência com outras linguagens de programação, a transição para o Crab será rápida. Caso seja sua primeira linguagem, temos recursos para ajudá-lo a começar do zero.</p>
+            <h3 id="instalacao">Instalação</h3>
+            <h4>Windows</h4>
+            <ol>
+                <li>Baixe o instalador mais recente do Crab na página de Downloads.</li>
+                <li>Execute o instalador e siga as instruções na tela.</li>
+                <li>Após a instalação, abra o Prompt de Comando e digite <code>crab --version</code> para verificar se a instalação foi bem-sucedida.</li>
+            </ol>
+            <h4>macOS</h4>
+            <ol>
+                <li>Abra o Terminal e instale o Crab utilizando o Homebrew:</li>
+                <pre><code>brew install crab-lang</code></pre>
+                <li>Verifique se a instalação foi bem-sucedida com o comando <code>crab --version</code>.</li>
+            </ol>
+            <h4>Linux</h4>
+            <ol>
+                <li>Baixe o arquivo binário do Crab para Linux na página de Downloads.</li>
+                <li>Extraia o arquivo e mova o binário <code>crab</code> para o diretório <code>/usr/local/bin</code>.</li>
+                <li>Verifique a instalação com o comando <code>crab --version</code>.</li>
+            </ol>
+            <h3 id="sintaxe">Sintaxe</h3>
+            <p>A sintaxe do Crab foi pensada para ser simples e intuitiva. Abaixo, temos um exemplo básico de código:</p>
+            <pre><code>fun main() {
+    println("Olá, Crab!")
+}</code></pre>
+            <p>Algumas características importantes:</p>
+            <ul>
+                <li>O Crab utiliza indentação para definir blocos de código, assim como o Python, garantindo legibilidade.</li>
+                <li>As variáveis podem ser definidas com o tipo inferido automaticamente, ou explicitamente.</li>
+                <li>O comando <code>println()</code> é usado para exibir informações no console.</li>
+            </ul>
+            <h3 id="tipos-de-dados">Tipos de Dados</h3>
+            <p>Crab suporta diversos tipos de dados nativos para facilitar a criação de programas robustos e eficientes. Os principais tipos são:</p>
+            <ul>
+                <li><code>int</code>: Números inteiros, como <code>let x = 42;</code></li>
+                <li><code>float</code>: Números com casas decimais, como <code>let y = 3.14;</code></li>
+                <li><code>string</code>: Sequências de caracteres, como <code>let nome = "Crab";</code></li>
+                <li><code>bool</code>: Valores <code>true</code> ou <code>false</code>, como <code>let isCrab = true;</code></li>
+            </ul>
+            <p>Você pode criar variáveis de forma simples e clara, e o tipo será inferido automaticamente.</p>
+            <h3 id="estruturas-de-controle">Estruturas de Controle</h3>
+            <p>Crab oferece várias estruturas de controle para permitir decisões e iterações no seu código:</p>
+            <h4>Condicional <code>if / else</h4>
+            <pre><code>let x = 10
+if x > 5 {
+    println("x é maior que 5")
+} else {
+    println("x é menor ou igual a 5")
+}</code></pre>
+            <h4>Laços de Repetição</h4>
+            <p>O Crab possui os tradicionais laços <code>for</code> e <code>while</code>:</p>
+            <h5>Laço <code>for</code>:</h5>
+            <pre><code>for i in 1..5 {
+    println(i)
+}</code></pre>
+            <h5>Laço <code>while</code>:</h5>
+            <pre><code>let i = 0
+while i < 5 {
+    println(i)
+    i += 1
+}</code></pre>
+            <h3 id="funcoes">Funções</h3>
+            <p>Funções são blocos de código que podem ser reutilizados em diversas partes do seu programa. No Crab, você pode definir uma função usando a palavra-chave <code>fun</code>.</p>
+            <p>Exemplo de definição e uso de função:</p>
+            <pre><code>fun saudacao(nome: string) {
+    println("Olá, " + nome + "!")
+}
+
+saudacao("Crab")</code></pre>
+            <p>Funções podem receber parâmetros e retornar valores. A tipagem é opcional, e o Crab pode inferir tipos automaticamente.</p>
+            <h3 id="concorrencia">Concorrência</h3>
+            <p>O Crab possui suporte nativo para concorrência, facilitando a execução paralela de tarefas. Isso permite que você aproveite múltiplos núcleos do processador e crie programas mais rápidos e eficientes.</p>
+            <p>Exemplo de concorrência:</p>
+            <pre><code>fun main() {
+    parallel {
+        println("Tarefa 1 executando em paralelo")
+    }
+    parallel {
+        println("Tarefa 2 executando em paralelo")
+    }
+}</code></pre>
+            <p>A palavra-chave <code>parallel</code> permite que você execute blocos de código simultaneamente.</p>
+            <h3 id="topicos-avancados">Tópicos Avançados</h3>
+            <ul>
+                <li><strong>Modularização:</strong> O Crab permite que você divida seu código em módulos reutilizáveis, aumentando a manutenção e organização do projeto.</li>
+                <li><strong>Tratamento de Erros:</strong> O tratamento de exceções no Crab é simples, utilizando a palavra-chave <code>try</code> para capturar erros e <code>catch</code> para lidar com eles.</li>
+                <li><strong>Bibliotecas Externas:</strong> O Crab permite o uso de bibliotecas externas para ampliar a funcionalidade da linguagem.</li>
+            </ul>
+            <h3 id="faq">Perguntas Frequentes (FAQ)</h3>
+            <h4>1. Quais plataformas o Crab suporta?</h4>
+            <p>O Crab é compatível com Windows, macOS e Linux.</p>
+            <h4>2. Como posso contribuir para o Crab?</h4>
+            <p>A comunidade do Crab é aberta a contribuições! Você pode começar acessando o repositório oficial no GitHub, onde pode reportar problemas, sugerir melhorias e até mesmo enviar pull requests.</p>
+            <h4>3. O Crab é uma linguagem open-source?</h4>
+            <p>Sim! O Crab é totalmente open-source. Seu código-fonte está disponível no GitHub, e incentivamos a participação ativa da comunidade.</p>
+            <h4>4. Quais são os planos futuros para o Crab?</h4>
+            <p>Estamos constantemente aprimorando o Crab, com foco em performance, novos recursos e integração com outras ferramentas de desenvolvimento. Fique de olho nas atualizações no nosso site e repositório oficial.</p>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Crab Programming Language. Todos os direitos reservados.</p>
+            <ul>
+                <li><a href="terms-of-use.html">Termos de Uso</a></li>
+                <li><a href="privacy-policy.html">Política de Privacidade</a></li>
+                <li><a href="about.html">Sobre Nós</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
